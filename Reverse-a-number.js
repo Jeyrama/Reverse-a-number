@@ -20,3 +20,13 @@ function reverseNumber(n) {
 
   return isNegative ? -result : result;
 }
+
+// or
+
+function reverseNumber(n) {
+  return Math.sign(n) * Math.abs(n)
+    .toString()
+    .split``
+    .reverse()
+    .join``;
+}
